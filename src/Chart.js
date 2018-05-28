@@ -11,7 +11,7 @@ class Chart extends Component {
           labels: [],
           datasets: [
             {
-              label: 'Price',
+              label: "Price",
               fill: false,
               lineTension: 0.1,
               backgroundColor: 'rgba(75,192,192,0.4)',
@@ -54,14 +54,15 @@ class Chart extends Component {
 
       histoMinute.Data.forEach(piece => {
         dataValue = Object.values(piece);
-        time[time.length]= dataValue[0];
+        time[time.length]= new Date(dataValue[0]).toLocaleTimeString();
         close[close.length]= dataValue[1];
       });
       this.setState({
         chartData: {
           labels: time,
           datasets: [
-            { data: close }
+            { data: close,
+              label: "Price" }
           ]
         }
       });
