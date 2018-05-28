@@ -25,7 +25,7 @@ class ChoosePrise extends Component {
             render={({ reset, submitting, pristine, values }) => (
               <form>
                 <div className="buttons">
-                  <label>Current Prise</label>
+                  <label>Current price</label>
                     <button
                       type="button"
                       onClick={() => this.setState({currency: "EUR", icon: "€"})}

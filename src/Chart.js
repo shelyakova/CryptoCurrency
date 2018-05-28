@@ -11,11 +11,11 @@ class Chart extends Component {
           labels: [],
           datasets: [
             {
-              label: "Price",
+              label: "BTC price",
               fill: false,
               lineTension: 0.1,
-              backgroundColor: 'rgba(75,192,192,0.4)',
-              borderColor: 'rgba(75,192,192,1)',
+              backgroundColor: "rgba(75,192,192,0.4)",
+              borderColor: "rgba(75,192,192,1)",
               borderCapStyle: 'butt',
               borderDash: [],
               borderDashOffset: 0.0,
@@ -62,7 +62,7 @@ class Chart extends Component {
           labels: time,
           datasets: [
             { data: close,
-              label: "Price" }
+              label: "BTC price" }
           ]
         }
       });
@@ -77,7 +77,7 @@ class Chart extends Component {
           render={({ reset, submitting, pristine, values }) => (
             <form>
               <div className="buttons">
-                <label>Current Prise</label>
+                <label>Current price</label>
                   <button
                     type="button"
                     onClick={() =>

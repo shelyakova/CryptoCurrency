@@ -10,9 +10,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+      <h2>Little CryptoApp</h2>
         <ChoosePrise  />
-        <Calculator />
-        {console.log(this.state)}
         <Chart />
         <LiveChart />
       </div>
